@@ -12,9 +12,13 @@ final class CategoryCollectionViewCell: UICollectionViewCell {
     
     private weak var categoryTitleLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addTitleLabel()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
         addTitleLabel()
     }
     
@@ -25,12 +29,14 @@ final class CategoryCollectionViewCell: UICollectionViewCell {
     }
     
     private func addTitleLabel() {
+                
         let label = UILabel()
         label.textColor = .darkGray
-        label.font = UIFont.systemFont(ofSize: 20)
+        label.font = UIFont.systemFont(ofSize: 40)
+        label.text = "asdfas"
         label.textAlignment = .center
-        self.addSubview(label)
-        label.autoPinEdgesToSuperview(with: 8)
+        self.contentView.addSubview(label)
+        label.autoPinEdgesToSuperview()
         self.categoryTitleLabel = label
     }
     

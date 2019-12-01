@@ -20,7 +20,7 @@ class MenuCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = UIViewController()
+        let vc = MenuVC()
         vc.view.backgroundColor = .blue
         self.navigationController.pushViewController(vc, animated: false)
     }

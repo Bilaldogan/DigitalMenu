@@ -10,6 +10,18 @@
 import UIKit
 
 extension UIView {
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            self.layer.cornerRadius = newValue
+            self.layer.masksToBounds = true
+        }
+        get {
+            return self.layer.cornerRadius
+        }
+    }
+}
+
+extension UIView {
     
     func autoPinEdgesToSuperview(with offset: CGFloat = 0) {
         self.translatesAutoresizingMaskIntoConstraints = false

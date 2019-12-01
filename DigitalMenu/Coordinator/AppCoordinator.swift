@@ -19,6 +19,21 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
+        let launchCoordinator = LaunchCoordinator(navigationController: self.navigationController)
+        launchCoordinator.parentCoordinator = self
+        self.childCoordinators.append(launchCoordinator)
+        launchCoordinator.start()
     }
 
+    func didFinisLaunch() {
+    }
+    
+    func childDidFinish(_ child: Coordinator?) {
+        for (index, coordinator) in childCoordinators.enumerated() {
+            if coordinator === child {
+                childCoordinators.remove(at: index)
+                break
+            }
+        }
+    }
 }

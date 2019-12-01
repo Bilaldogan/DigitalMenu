@@ -10,6 +10,10 @@ import UIKit
 
 class MenuItemCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var itemNameLabel: UILabel!
+    @IBOutlet weak var itemPriceLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

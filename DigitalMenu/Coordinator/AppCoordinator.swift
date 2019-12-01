@@ -14,8 +14,11 @@ class AppCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     
+    weak var window: UIWindow?
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        self.navigationController.isNavigationBarHidden = true
     }
     
     func start() {
@@ -26,6 +29,14 @@ class AppCoordinator: Coordinator {
     }
 
     func didFinisLaunch() {
+        let splitVC = UISplitViewController()
+        
+        let homeCoordinator = HomeCoordinator(spiltViewController: splitVC)
+        homeCoordinator.start()
+        
+        self.childCoordinators.append(homeCoordinator)
+        window?.rootViewController = splitVC
+        window?.makeKeyAndVisible()
     }
     
     func childDidFinish(_ child: Coordinator?) {

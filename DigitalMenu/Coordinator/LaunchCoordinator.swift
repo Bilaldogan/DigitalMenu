@@ -22,6 +22,7 @@ class LaunchCoordinator: Coordinator {
     func start() {
         let launchVC = LaunchVC()
         launchVC.view.backgroundColor = .yellow
+        launchVC.coordinator = self
         self.navigationController.pushViewController(launchVC, animated: false)
     }
     

@@ -14,8 +14,7 @@ final class LaunchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+       finishLaunch()
     }
 
     private func finishLaunch() {

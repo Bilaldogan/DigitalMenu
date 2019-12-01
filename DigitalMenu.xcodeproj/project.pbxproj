@@ -18,6 +18,8 @@
 		88D637AB2394130C003ECCA9 /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D637AA2394130C003ECCA9 /* LaunchCoordinator.swift */; };
 		88D637AE23941465003ECCA9 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D637AD23941465003ECCA9 /* LaunchVC.swift */; };
 		88D637B023942149003ECCA9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D637AF23942149003ECCA9 /* HomeCoordinator.swift */; };
+		88D637B4239428F9003ECCA9 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D637B2239428F9003ECCA9 /* CategoryCollectionViewCell.swift */; };
+		88D637B92394323E003ECCA9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D637B82394323E003ECCA9 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		88D637AA2394130C003ECCA9 /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
 		88D637AD23941465003ECCA9 /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		88D637AF23942149003ECCA9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		88D637B2239428F9003ECCA9 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		88D637B82394323E003ECCA9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				88D6377D2393224B003ECCA9 /* App */,
 				88D6377E23932275003ECCA9 /* Coordinator */,
 				88D637AC23941434003ECCA9 /* ViewControllers */,
+				88D637B1239428A8003ECCA9 /* Components */,
+				88D637B723943226003ECCA9 /* Extensions */,
 				88D6377223931E7D003ECCA9 /* Assets.xcassets */,
 				88D6377423931E7D003ECCA9 /* LaunchScreen.storyboard */,
 				88D6377723931E7D003ECCA9 /* Info.plist */,
@@ -104,6 +110,30 @@
 				88D637AD23941465003ECCA9 /* LaunchVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88D637B1239428A8003ECCA9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				88D637B6239428FE003ECCA9 /* CategoryCollectionViewCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		88D637B6239428FE003ECCA9 /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				88D637B2239428F9003ECCA9 /* CategoryCollectionViewCell.swift */,
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		88D637B723943226003ECCA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				88D637B82394323E003ECCA9 /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +212,10 @@
 				88D637AB2394130C003ECCA9 /* LaunchCoordinator.swift in Sources */,
 				88D6376A23931E7C003ECCA9 /* AppDelegate.swift in Sources */,
 				88D6376C23931E7C003ECCA9 /* SceneDelegate.swift in Sources */,
+				88D637B4239428F9003ECCA9 /* CategoryCollectionViewCell.swift in Sources */,
 				88D63786239342D6003ECCA9 /* MenuCoordinator.swift in Sources */,
 				88D637AE23941465003ECCA9 /* LaunchVC.swift in Sources */,
+				88D637B92394323E003ECCA9 /* UIView.swift in Sources */,
 				88D63780239322C3003ECCA9 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

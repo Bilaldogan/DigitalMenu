@@ -7,23 +7,33 @@
 //
 
 import UIKit
-import Realm
+import RealmSwift
 final class LaunchVC: UIViewController {
 
     weak var coordinator: LaunchCoordinator?
-    
+    var api = MockMenuApi()
     override func viewDidLoad() {
         super.viewDidLoad()
-       finishLaunch()
+        getItems()        
     }
 
-    private func finishLaunch() {
-        #warning("load test data here")
-        guard let jsonPath = Bundle.main.path(forResource: "TestData", ofType: "json"),
-            let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
-                return
+    private func getItems() {
+        api.getAllItems { (result) in
+            switch result {
+            case .success(let categories):
+                let realm = try! Realm()
+                try! realm.write() {
+                    realm.add(categories)
+                }
+                self.finishLaunch()
+            case .failure(let error):
+                print(error)
+            }
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+    }
+    
+    private func finishLaunch() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.coordinator?.didFinisLaunch()
         }
     }

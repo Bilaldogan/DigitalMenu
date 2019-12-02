@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8810F1D42395A8E100201AF3 /* MenuApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810F1D32395A8E100201AF3 /* MenuApi.swift */; };
+		8810F1D62395AC9200201AF3 /* MockMenuApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810F1D52395AC9200201AF3 /* MockMenuApi.swift */; };
 		8847DE23239507FD00166D12 /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE21239507FD00166D12 /* CheckTableViewCell.swift */; };
 		8847DE24239507FD00166D12 /* CheckTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8847DE22239507FD00166D12 /* CheckTableViewCell.xib */; };
 		8847DE262395210900166D12 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE252395210900166D12 /* UITableView.swift */; };
@@ -16,6 +18,10 @@
 		8847DE3123959E3200166D12 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE3023959E3200166D12 /* Category.swift */; };
 		8847DE3323959E7300166D12 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE3223959E7300166D12 /* MenuItem.swift */; };
 		8847DE3523959E7F00166D12 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE3423959E7F00166D12 /* SubCategory.swift */; };
+		8847DE382395A70700166D12 /* EndPointCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE372395A70700166D12 /* EndPointCreator.swift */; };
+		8847DE3A2395A76B00166D12 /* DMApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE392395A76B00166D12 /* DMApi.swift */; };
+		8847DE3C2395A7CC00166D12 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE3B2395A7CC00166D12 /* NetworkError.swift */; };
+		8847DE3F2395A81D00166D12 /* MenuApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE3E2395A81D00166D12 /* MenuApiProtocol.swift */; };
 		88D6376A23931E7C003ECCA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6376923931E7C003ECCA9 /* AppDelegate.swift */; };
 		88D6376C23931E7C003ECCA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6376B23931E7C003ECCA9 /* SceneDelegate.swift */; };
 		88D6377323931E7D003ECCA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D6377223931E7D003ECCA9 /* Assets.xcassets */; };
@@ -44,6 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8810F1D32395A8E100201AF3 /* MenuApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApi.swift; sourceTree = "<group>"; };
+		8810F1D52395AC9200201AF3 /* MockMenuApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMenuApi.swift; sourceTree = "<group>"; };
 		8847DE21239507FD00166D12 /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
 		8847DE22239507FD00166D12 /* CheckTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckTableViewCell.xib; sourceTree = "<group>"; };
 		8847DE252395210900166D12 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 		8847DE3023959E3200166D12 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8847DE3223959E7300166D12 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		8847DE3423959E7F00166D12 /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
+		8847DE372395A70700166D12 /* EndPointCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointCreator.swift; sourceTree = "<group>"; };
+		8847DE392395A76B00166D12 /* DMApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMApi.swift; sourceTree = "<group>"; };
+		8847DE3B2395A7CC00166D12 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8847DE3E2395A81D00166D12 /* MenuApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApiProtocol.swift; sourceTree = "<group>"; };
 		88D6376623931E7C003ECCA9 /* DigitalMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D6376923931E7C003ECCA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D6376B23931E7C003ECCA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8810F1D22395A8D000201AF3 /* MenuApi */ = {
+			isa = PBXGroup;
+			children = (
+				8847DE3E2395A81D00166D12 /* MenuApiProtocol.swift */,
+				8810F1D32395A8E100201AF3 /* MenuApi.swift */,
+				8810F1D52395AC9200201AF3 /* MockMenuApi.swift */,
+			);
+			path = MenuApi;
+			sourceTree = "<group>";
+		};
 		8847DE20239507DD00166D12 /* CheckTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +154,25 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		8847DE362395A6E000166D12 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8810F1D22395A8D000201AF3 /* MenuApi */,
+				8847DE3D2395A7E400166D12 /* Api */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8847DE3D2395A7E400166D12 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				8847DE372395A70700166D12 /* EndPointCreator.swift */,
+				8847DE392395A76B00166D12 /* DMApi.swift */,
+				8847DE3B2395A7CC00166D12 /* NetworkError.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		88D6375D23931E7C003ECCA9 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +198,7 @@
 				88D6377E23932275003ECCA9 /* Coordinator */,
 				88D637AC23941434003ECCA9 /* ViewControllers */,
 				88D637B1239428A8003ECCA9 /* Components */,
+				8847DE362395A6E000166D12 /* Network */,
 				8847DE2F23959E1E00166D12 /* Models */,
 				88D637B723943226003ECCA9 /* Extensions */,
 				8847DE2C239594C600166D12 /* Resources */,
@@ -419,6 +461,7 @@
 				88D63784239341ED003ECCA9 /* CheckCoordinator.swift in Sources */,
 				8847DE3523959E7F00166D12 /* SubCategory.swift in Sources */,
 				88D637B023942149003ECCA9 /* HomeCoordinator.swift in Sources */,
+				8847DE3C2395A7CC00166D12 /* NetworkError.swift in Sources */,
 				8847DE23239507FD00166D12 /* CheckTableViewCell.swift in Sources */,
 				88D637E1239484C2003ECCA9 /* CheckHeaderView.swift in Sources */,
 				88D637AB2394130C003ECCA9 /* LaunchCoordinator.swift in Sources */,
@@ -426,13 +469,18 @@
 				88D6376A23931E7C003ECCA9 /* AppDelegate.swift in Sources */,
 				88D637C323943692003ECCA9 /* MenuVC.swift in Sources */,
 				88D637C62394395F003ECCA9 /* UICollectionView.swift in Sources */,
+				8810F1D42395A8E100201AF3 /* MenuApi.swift in Sources */,
+				8810F1D62395AC9200201AF3 /* MockMenuApi.swift in Sources */,
 				88D637D823945AD9003ECCA9 /* MenuNavigationVC.swift in Sources */,
 				88D6376C23931E7C003ECCA9 /* SceneDelegate.swift in Sources */,
 				88D637B4239428F9003ECCA9 /* CategoryCollectionViewCell.swift in Sources */,
 				88D63786239342D6003ECCA9 /* MenuCoordinator.swift in Sources */,
 				88D637AE23941465003ECCA9 /* LaunchVC.swift in Sources */,
 				8847DE29239536A500166D12 /* CheckDetailVC.swift in Sources */,
+				8847DE3A2395A76B00166D12 /* DMApi.swift in Sources */,
+				8847DE382395A70700166D12 /* EndPointCreator.swift in Sources */,
 				88D637B92394323E003ECCA9 /* UIView.swift in Sources */,
+				8847DE3F2395A81D00166D12 /* MenuApiProtocol.swift in Sources */,
 				8847DE262395210900166D12 /* UITableView.swift in Sources */,
 				88D63780239322C3003ECCA9 /* Coordinator.swift in Sources */,
 				88D637D323945613003ECCA9 /* CheckVC.swift in Sources */,

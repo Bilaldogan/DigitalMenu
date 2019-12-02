@@ -36,6 +36,7 @@ class CheckHeaderView: UIView {
         label.isHidden = true
         return label
     }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

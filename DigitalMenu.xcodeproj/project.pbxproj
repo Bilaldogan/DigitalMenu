@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8847DE23239507FD00166D12 /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE21239507FD00166D12 /* CheckTableViewCell.swift */; };
 		8847DE24239507FD00166D12 /* CheckTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8847DE22239507FD00166D12 /* CheckTableViewCell.xib */; };
+		8847DE262395210900166D12 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE252395210900166D12 /* UITableView.swift */; };
+		8847DE29239536A500166D12 /* CheckDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847DE27239536A500166D12 /* CheckDetailVC.swift */; };
+		8847DE2A239536A500166D12 /* CheckDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8847DE28239536A500166D12 /* CheckDetailVC.xib */; };
 		88D6376A23931E7C003ECCA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6376923931E7C003ECCA9 /* AppDelegate.swift */; };
 		88D6376C23931E7C003ECCA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6376B23931E7C003ECCA9 /* SceneDelegate.swift */; };
 		88D6377323931E7D003ECCA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D6377223931E7D003ECCA9 /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		8847DE21239507FD00166D12 /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
 		8847DE22239507FD00166D12 /* CheckTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckTableViewCell.xib; sourceTree = "<group>"; };
+		8847DE252395210900166D12 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		8847DE27239536A500166D12 /* CheckDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDetailVC.swift; sourceTree = "<group>"; };
+		8847DE28239536A500166D12 /* CheckDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckDetailVC.xib; sourceTree = "<group>"; };
 		88D6376623931E7C003ECCA9 /* DigitalMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D6376923931E7C003ECCA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D6376B23931E7C003ECCA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +90,15 @@
 				8847DE22239507FD00166D12 /* CheckTableViewCell.xib */,
 			);
 			path = CheckTableViewCell;
+			sourceTree = "<group>";
+		};
+		8847DE2B239536BF00166D12 /* CheckDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				8847DE27239536A500166D12 /* CheckDetailVC.swift */,
+				8847DE28239536A500166D12 /* CheckDetailVC.xib */,
+			);
+			path = CheckDetailVC;
 			sourceTree = "<group>";
 		};
 		88D6375D23931E7C003ECCA9 = {
@@ -145,6 +160,7 @@
 				88D637AD23941465003ECCA9 /* LaunchVC.swift */,
 				88D637BE23943661003ECCA9 /* MenuVC */,
 				88D637D52394561E003ECCA9 /* CheckVC */,
+				8847DE2B239536BF00166D12 /* CheckDetailVC */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -174,7 +190,7 @@
 			children = (
 				88D637B82394323E003ECCA9 /* UIView.swift */,
 				88D637C52394395F003ECCA9 /* UICollectionView.swift */,
-				88D637E0239484C2003ECCA9 /* CheckHeaderView.swift */,
+				8847DE252395210900166D12 /* UITableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,6 +235,7 @@
 		88D637DF23948456003ECCA9 /* CheckHeaderView */ = {
 			isa = PBXGroup;
 			children = (
+				88D637E0239484C2003ECCA9 /* CheckHeaderView.swift */,
 			);
 			path = CheckHeaderView;
 			sourceTree = "<group>";
@@ -285,6 +302,7 @@
 				88D637D023945388003ECCA9 /* MenuItemCollectionViewCell.xib in Resources */,
 				88D6377623931E7D003ECCA9 /* LaunchScreen.storyboard in Resources */,
 				88D6377323931E7D003ECCA9 /* Assets.xcassets in Resources */,
+				8847DE2A239536A500166D12 /* CheckDetailVC.xib in Resources */,
 				88D637CB2394489B003ECCA9 /* SubCategoryCollectionViewCell.xib in Resources */,
 				88D637D423945613003ECCA9 /* CheckVC.xib in Resources */,
 				8847DE24239507FD00166D12 /* CheckTableViewCell.xib in Resources */,
@@ -314,7 +332,9 @@
 				88D637B4239428F9003ECCA9 /* CategoryCollectionViewCell.swift in Sources */,
 				88D63786239342D6003ECCA9 /* MenuCoordinator.swift in Sources */,
 				88D637AE23941465003ECCA9 /* LaunchVC.swift in Sources */,
+				8847DE29239536A500166D12 /* CheckDetailVC.swift in Sources */,
 				88D637B92394323E003ECCA9 /* UIView.swift in Sources */,
+				8847DE262395210900166D12 /* UITableView.swift in Sources */,
 				88D63780239322C3003ECCA9 /* Coordinator.swift in Sources */,
 				88D637D323945613003ECCA9 /* CheckVC.swift in Sources */,
 			);

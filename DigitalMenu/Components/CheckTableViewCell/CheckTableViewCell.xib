@@ -20,7 +20,7 @@
                         <rect key="frame" x="8" y="8" width="330" height="113"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZM-YO-p5m">
-                                <rect key="frame" x="8" y="8" width="314" height="21"/>
+                                <rect key="frame" x="8" y="8" width="314" height="89"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,6 +30,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="hZM-YO-p5m" secondAttribute="trailing" constant="8" id="9Vl-Ia-Ktg"/>
                             <constraint firstItem="hZM-YO-p5m" firstAttribute="top" secondItem="YoK-fD-BPT" secondAttribute="top" constant="8" id="SvL-Z6-I4T"/>
+                            <constraint firstAttribute="bottom" secondItem="hZM-YO-p5m" secondAttribute="bottom" constant="16" id="bxn-0S-9Bv"/>
                             <constraint firstItem="hZM-YO-p5m" firstAttribute="leading" secondItem="YoK-fD-BPT" secondAttribute="leading" constant="8" id="nkE-Gt-Ado"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>

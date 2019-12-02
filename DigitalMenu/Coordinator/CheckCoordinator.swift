@@ -12,15 +12,22 @@ class CheckCoordinator: Coordinator {
     
     var childCoordinators = [Coordinator]()
     
-    var navigationController: UINavigationController
+    var navigationController: CheckNavigationContoller
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: CheckNavigationContoller) {
         self.navigationController = navigationController
     }
     
     func start() {
         let checkVC = CheckVC()
+        checkVC.coordinator = self
         self.navigationController.pushViewController(checkVC, animated:false)
+    }
+    
+    func openDetail(with check: String) {
+        let checkDetailVC = CheckDetailVC()
+        checkDetailVC.coordinator = self
+        self.navigationController.pushViewController(checkDetailVC, animated: true)
     }
     
 }

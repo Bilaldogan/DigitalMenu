@@ -1,29 +1,30 @@
 //
-//  CheckVC.swift
+//  CheckDetailVC.swift
 //  DigitalMenu
 //
-//  Created by Bilal Doğan on 1.12.2019.
+//  Created by Bilal Doğan on 2.12.2019.
 //  Copyright © 2019 Bilal Doğan. All rights reserved.
 //
 
 import UIKit
 
-class CheckVC: UIViewController {
-
-    weak var coordinator: CheckCoordinator?
+class CheckDetailVC: UIViewController {
     
-    @IBOutlet weak var checkListTableView: UITableView!
+    weak var coordinator: CheckCoordinator?
+
+    @IBOutlet weak var checkDetailTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkListTableView.register(cellWithClass: CheckTableViewCell.self)
+        checkDetailTableView.register(cellWithClass: CheckTableViewCell.self)
+        // Do any additional setup after loading the view.
     }
 
 }
 
-extension CheckVC: UITableViewDelegate, UITableViewDataSource {
+extension CheckDetailVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,7 +32,5 @@ extension CheckVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        coordinator?.openDetail(with: "")
-    }
+    
 }

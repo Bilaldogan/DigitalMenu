@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckVC" customModule="DigitalMenu" customModuleProvider="target">
             <connections>
+                <outlet property="checkListTableView" destination="HSm-95-AHm" id="9zR-f1-JH0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,7 +17,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HSm-95-AHm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="UJ8-Fl-16a"/>
+                        <outlet property="delegate" destination="-1" id="WCK-Pc-rGe"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="0.060166476348088478" green="0.20335489662411679" blue="0.26329385080645162" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="HSm-95-AHm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KbF-nl-r6B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HSm-95-AHm" secondAttribute="trailing" id="VkQ-TK-afl"/>
+                <constraint firstItem="HSm-95-AHm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WQd-ab-Mab"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HSm-95-AHm" secondAttribute="bottom" id="tdh-zf-CWW"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="99" y="137"/>
         </view>

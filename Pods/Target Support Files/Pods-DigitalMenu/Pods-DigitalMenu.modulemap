@@ -1,0 +1,6 @@
+framework module Pods_DigitalMenu {
+  umbrella header "Pods-DigitalMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

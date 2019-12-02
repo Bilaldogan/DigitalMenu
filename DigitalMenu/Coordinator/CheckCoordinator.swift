@@ -16,11 +16,11 @@ class CheckCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.navigationController.isNavigationBarHidden = true
     }
     
     func start() {
-        
+        let checkVC = CheckVC()
+        self.navigationController.pushViewController(checkVC, animated:false)
     }
     
 }

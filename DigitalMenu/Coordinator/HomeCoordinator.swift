@@ -20,7 +20,7 @@ class HomeCoordinator: Coordinator {
     
     func start() {
         
-        let checkNavController = UINavigationController()
+        let checkNavController = CheckNavigationContoller()
         let menuNavController = UINavigationController()
         
         let checkCoordinator = CheckCoordinator(navigationController: checkNavController)

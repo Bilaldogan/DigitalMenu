@@ -21,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OQN-vz-661">
-                    <rect key="frame" x="0.0" y="0.0" width="694" height="120"/>
+                    <rect key="frame" x="0.0" y="0.0" width="694" height="100"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="120" id="oUR-CF-ZeR"/>
+                        <constraint firstAttribute="height" constant="100" id="oUR-CF-ZeR"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="40" minimumInteritemSpacing="10" id="hgT-GM-6zd">
                         <size key="itemSize" width="50" height="50"/>
@@ -38,7 +38,7 @@
                     </connections>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EZJ-Wo-dpc">
-                    <rect key="frame" x="0.0" y="128" width="694" height="100"/>
+                    <rect key="frame" x="0.0" y="108" width="694" height="100"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="zrN-LL-mrH"/>
@@ -55,7 +55,7 @@
                     </connections>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9C8-eL-sGH">
-                    <rect key="frame" x="0.0" y="236" width="694" height="532"/>
+                    <rect key="frame" x="0.0" y="216" width="694" height="552"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u8K-Zh-Wyj">
                         <size key="itemSize" width="50" height="50"/>

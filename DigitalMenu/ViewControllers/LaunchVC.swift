@@ -14,7 +14,7 @@ final class LaunchVC: UIViewController {
     var api = MockMenuApi()
     override func viewDidLoad() {
         super.viewDidLoad()
-        getItems()        
+        getItems()
     }
 
     private func getItems() {
@@ -23,6 +23,7 @@ final class LaunchVC: UIViewController {
             case .success(let categories):
                 let realm = try! Realm()
                 try! realm.write() {
+                    realm.deleteAll()
                     realm.add(categories)
                 }
                 self.finishLaunch()

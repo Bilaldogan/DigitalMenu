@@ -28,6 +28,10 @@ final class CategoryCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    func configure(with item: Category) {
+        self.categoryTitleLabel.text = item.name
+    }
+    
     private func addTitleLabel() {
                 
         let label = UILabel()

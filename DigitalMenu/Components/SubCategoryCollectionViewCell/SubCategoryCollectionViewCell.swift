@@ -23,6 +23,10 @@ class SubCategoryCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    func configure(with item: SubCategory) {
+        self.categoryTitleLabel.text = item.name
+    }
+    
     private func refreshState() {
         if isSelected {
             self.categoryTitleLabel.textColor = UIColor.white

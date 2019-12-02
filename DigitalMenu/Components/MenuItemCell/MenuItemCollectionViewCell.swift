@@ -19,4 +19,8 @@ class MenuItemCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
+    func configure(with item: MenuItem) {
+        self.itemNameLabel.text = item.name
+        self.itemPriceLabel.text = "\(item.price)"
+    }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 class MockMenuApi: MenuApiProtocol {
     func getAllItems(completion: @escaping (Result<[Category], NetworkError>) -> Void) {
-        
+        completion(.success(getTestData()))
     }
     
     private func getTestData() -> [Category] {

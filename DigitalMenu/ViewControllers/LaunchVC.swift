@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Realm
 final class LaunchVC: UIViewController {
 
     weak var coordinator: LaunchCoordinator?
@@ -19,6 +19,10 @@ final class LaunchVC: UIViewController {
 
     private func finishLaunch() {
         #warning("load test data here")
+        guard let jsonPath = Bundle.main.path(forResource: "TestData", ofType: "json"),
+            let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
+                return
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.coordinator?.didFinisLaunch()
         }

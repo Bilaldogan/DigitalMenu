@@ -12,4 +12,8 @@ class Category: Object,Decodable {
     @objc dynamic var id = 0
     @objc dynamic var name = ""
     var subCategories = List<SubCategory>()
+    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
 }

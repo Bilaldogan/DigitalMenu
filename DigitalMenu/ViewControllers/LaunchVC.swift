@@ -23,8 +23,7 @@ final class LaunchVC: UIViewController {
             case .success(let categories):
                 let realm = try! Realm()
                 try! realm.write() {
-                    realm.deleteAll()
-                    realm.add(categories)
+                    realm.add(categories, update: .modified)
                 }
                 self.finishLaunch()
             case .failure(let error):

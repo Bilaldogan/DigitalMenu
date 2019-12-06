@@ -19,23 +19,45 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8z6-9W-PfK">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="756"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Moo-gk-uM4"/>
                         <outlet property="delegate" destination="-1" id="Ec4-tt-WO3"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tY7-OY-UQO">
+                    <rect key="frame" x="0.0" y="800" width="414" height="62"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra1-8M-aio">
+                            <rect key="frame" x="32" y="16" width="350" height="30"/>
+                            <state key="normal" title="Pay Check"/>
+                            <connections>
+                                <action selector="payCheck:" destination="-1" eventType="touchUpInside" id="jkH-2f-aRJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ra1-8M-aio" secondAttribute="trailing" constant="32" id="BFP-4K-G1T"/>
+                        <constraint firstItem="Ra1-8M-aio" firstAttribute="leading" secondItem="tY7-OY-UQO" secondAttribute="leading" constant="32" id="fQV-h2-16I"/>
+                        <constraint firstAttribute="bottom" secondItem="Ra1-8M-aio" secondAttribute="bottom" constant="16" id="grv-xr-bPq"/>
+                        <constraint firstItem="Ra1-8M-aio" firstAttribute="top" secondItem="tY7-OY-UQO" secondAttribute="top" constant="16" id="nVa-rN-qby"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tY7-OY-UQO" secondAttribute="trailing" id="0dD-ST-xwh"/>
+                <constraint firstItem="tY7-OY-UQO" firstAttribute="top" secondItem="8z6-9W-PfK" secondAttribute="bottom" id="JFO-bR-Wun"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8z6-9W-PfK" secondAttribute="trailing" id="SM5-aW-K5q"/>
                 <constraint firstItem="8z6-9W-PfK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="f5d-SD-SK3"/>
                 <constraint firstItem="8z6-9W-PfK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h9Y-at-k1d"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8z6-9W-PfK" secondAttribute="bottom" id="zSb-fP-fw6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tY7-OY-UQO" secondAttribute="bottom" id="xRi-cR-TIT"/>
+                <constraint firstItem="tY7-OY-UQO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yPA-B4-k5C"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="48" y="137"/>
+            <point key="canvasLocation" x="47.826086956521742" y="136.60714285714286"/>
         </view>
     </objects>
 </document>

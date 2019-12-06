@@ -7,8 +7,12 @@
 //
 
 import UIKit
-
+protocol CheckHeaderViewDelegate:NSObject {
+    func backTapped()
+}
 class CheckHeaderView: UIView {
+    
+    weak var delagate: CheckHeaderViewDelegate?
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
@@ -27,9 +31,10 @@ class CheckHeaderView: UIView {
     private lazy var closeButton: UIButton = {
         let button = UIButton(type: .close)
         button.isHidden = true
+        button.addTarget(self, action: #selector(backTapped), for: .touchUpInside)
         return button
     }()
-
+    
     private lazy var checkNumberLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
@@ -40,7 +45,7 @@ class CheckHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
-
+        
     }
     
     required init?(coder: NSCoder) {
@@ -65,4 +70,23 @@ class CheckHeaderView: UIView {
         self.stackView.addArrangedSubview(UIView(frame:.zero))
     }
     
+    func showDeatil(with checkNumber: String){
+        UIView.animate(withDuration: 0.5) {
+            self.checkNumberLabel.isHidden = false
+            self.checkNumberLabel.text = checkNumber
+            self.closeButton.isHidden = false
+        }
+    }
+    
+    func showInitialState() {
+        UIView.animate(withDuration: 0.5) {
+            self.checkNumberLabel.isHidden = false
+            self.closeButton.isHidden = false
+        }
+    }
+    
+    @objc func backTapped() {
+        self.delagate?.backTapped()
+        showInitialState()
+    }
 }

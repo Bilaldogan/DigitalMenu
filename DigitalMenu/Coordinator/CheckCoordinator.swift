@@ -24,10 +24,27 @@ class CheckCoordinator: Coordinator {
         self.navigationController.pushViewController(checkVC, animated:false)
     }
     
-    func openDetail(with check: String) {
+    func openDetail(with check: CheckItem) {
         let checkDetailVC = CheckDetailVC()
         checkDetailVC.coordinator = self
-        self.navigationController.pushViewController(checkDetailVC, animated: true)
+        checkDetailVC.check = check
+        self.navigationController.push(vc: checkDetailVC, checkNumber: String(check.id))
     }
     
+    func pop() {
+        self.navigationController.popViewController(animated: true)
+    }
+    
+}
+
+extension CheckCoordinator: MenuItemAcceptable {
+    func add(menuItem: MenuItem) {
+        if let vc = self.navigationController.topViewController as? MenuItemAcceptable {
+            vc.add(menuItem: menuItem)
+        }
+    }
+}
+
+protocol MenuItemAcceptable {
+    func add(menuItem: MenuItem)
 }

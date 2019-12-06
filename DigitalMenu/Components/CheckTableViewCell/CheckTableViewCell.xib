@@ -9,18 +9,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="129" id="KGk-i7-Jjw" customClass="CheckTableViewCell" customModule="DigitalMenu" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="346" height="129"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="CheckTableViewCell" customModule="DigitalMenu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="95"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="346" height="129"/>
+                <rect key="frame" x="0.0" y="0.0" width="346" height="95"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoK-fD-BPT">
-                        <rect key="frame" x="8" y="8" width="330" height="113"/>
+                        <rect key="frame" x="8" y="8" width="330" height="79"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZM-YO-p5m">
-                                <rect key="frame" x="8" y="8" width="314" height="89"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZM-YO-p5m">
+                                <rect key="frame" x="8" y="8" width="314" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNS-Jj-B3W">
+                                <rect key="frame" x="16" y="66" width="298" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,9 +34,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="QNS-Jj-B3W" firstAttribute="top" secondItem="hZM-YO-p5m" secondAttribute="bottom" constant="8" id="1ST-hl-gmS"/>
                             <constraint firstAttribute="trailing" secondItem="hZM-YO-p5m" secondAttribute="trailing" constant="8" id="9Vl-Ia-Ktg"/>
+                            <constraint firstAttribute="trailing" secondItem="QNS-Jj-B3W" secondAttribute="trailing" constant="16" id="PQZ-SP-pqe"/>
+                            <constraint firstAttribute="bottom" secondItem="QNS-Jj-B3W" secondAttribute="bottom" constant="8" id="RLP-r9-NZJ"/>
                             <constraint firstItem="hZM-YO-p5m" firstAttribute="top" secondItem="YoK-fD-BPT" secondAttribute="top" constant="8" id="SvL-Z6-I4T"/>
-                            <constraint firstAttribute="bottom" secondItem="hZM-YO-p5m" secondAttribute="bottom" constant="16" id="bxn-0S-9Bv"/>
+                            <constraint firstItem="QNS-Jj-B3W" firstAttribute="leading" secondItem="YoK-fD-BPT" secondAttribute="leading" constant="16" id="kaA-Fv-GdI"/>
                             <constraint firstItem="hZM-YO-p5m" firstAttribute="leading" secondItem="YoK-fD-BPT" secondAttribute="leading" constant="8" id="nkE-Gt-Ado"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -53,8 +62,9 @@
             <connections>
                 <outlet property="checkNumberLabel" destination="hZM-YO-p5m" id="Nkw-Wu-S0X"/>
                 <outlet property="containerView" destination="YoK-fD-BPT" id="Ddh-wg-ubj"/>
+                <outlet property="priceLabel" destination="QNS-Jj-B3W" id="xw0-4m-ovD"/>
             </connections>
-            <point key="canvasLocation" x="156.52173913043478" y="108.14732142857143"/>
+            <point key="canvasLocation" x="155.07246376811597" y="96.763392857142847"/>
         </tableViewCell>
     </objects>
 </document>

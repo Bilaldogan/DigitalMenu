@@ -28,6 +28,7 @@ class HomeCoordinator: Coordinator {
         self.childCoordinators.append(checkCoordinator)
         
         let menuCoordinator = MenuCoordinator(navigationController: menuNavController)
+        menuCoordinator.parentCoordinator = self
         menuCoordinator.start()
         self.childCoordinators.append(menuCoordinator)
         
@@ -35,6 +36,14 @@ class HomeCoordinator: Coordinator {
         self.splitViewController.preferredPrimaryColumnWidthFraction = 1/3
         self.splitViewController.viewControllers = [checkNavController,menuNavController]
         
+    }
+    
+    func addItemToCheck(item: MenuItem) {
+        for coordinator in childCoordinators {
+            if let coordinator = coordinator as? MenuItemAcceptable {
+                coordinator.add(menuItem: item)
+            }
+        }
     }
     
     

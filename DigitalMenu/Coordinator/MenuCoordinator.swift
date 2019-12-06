@@ -10,6 +10,8 @@ import UIKit
 
 class MenuCoordinator: Coordinator {
     
+    var parentCoordinator: HomeCoordinator?
+    
     var childCoordinators = [Coordinator]()
     
     var navigationController: UINavigationController
@@ -22,7 +24,12 @@ class MenuCoordinator: Coordinator {
     func start() {
         let vc = MenuVC()
         vc.view.backgroundColor = .blue
+        vc.coordinator = self
         self.navigationController.pushViewController(vc, animated: false)
+    }
+    
+    func didSelect(menuItem: MenuItem) {
+        parentCoordinator?.addItemToCheck(item: menuItem)
     }
     
 }

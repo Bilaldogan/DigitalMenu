@@ -10,6 +10,8 @@ import UIKit
 
 final class MenuVC: UIViewController {
     
+    weak var coordinator: MenuCoordinator?
+    
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var subCategoryCollectionView: UICollectionView!
     @IBOutlet weak var menuItemsCollectionView: UICollectionView!
@@ -106,6 +108,9 @@ extension MenuVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
             viewModel.filterCategory(in: indexPath.row)
         case subCategoryCollectionView:
             viewModel.filterSubCategory(in: indexPath.row)
+        case menuItemsCollectionView:
+            let selectedItem = viewModel.menuItem(at: indexPath.row)
+            coordinator?.didSelect(menuItem: selectedItem)
         default:break
         }
         reloadCollectionViews()

@@ -53,5 +53,9 @@ class MenuVCViewModel {
         updated?()
     }
     
+    func menuItem(at index: Int) -> MenuItem{
+        return self.filteredItems[index]
+    }
+    
     
 }

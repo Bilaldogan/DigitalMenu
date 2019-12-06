@@ -12,4 +12,8 @@ class SubCategory: Object,Decodable {
     @objc dynamic var id = 0
     @objc dynamic var name = ""
     var items = List<MenuItem>()
+    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
 }
